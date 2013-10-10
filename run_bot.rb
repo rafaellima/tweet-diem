@@ -12,9 +12,14 @@ bot = TweetBot.configure do |config|
   # responses << "What a great day, indeed! Enjoy it, because you deserve it!" << "This day really is better because you are here. Thanks for being awesome!"
   # end
 
+  config.respond_to_phrase "bonjour" do |responses|
+    responses << "Bonjour à vous! C'est une journée fantastique aujourd'hui! Rappelez-vous comment vous êtes génial!" << "C'est une bonne matinée, car le monde est meilleur quand vous êtes ici." << "Bonjour ! Vous méritez une journée fantastique aujourd'hui! Amusez-vous!"<< "Et un matin merveilleux pour vous aussi! Chaque jour, ouvre de nouvelles possibilités. Amusez-vous!"<< "Bonjour ! Merci d'être génial. Profitez de votre journée!" << "Profitez de votre journée! La vie est belle, et vous la rendez encore meilleur!" << "J'espère que votre journée sera merveilleuses! Vous le méritez!" << "J'espère qu'aujourd'hui sera une journée merveilleuse pour vous. Merci d'être là!" << "Chaque jour ouvre des nouvelles portes et vous méritez d'en profiter!" << "Profitez de votre matinée! Détendez-vous et prenez une profonde respiration. N'oubliez pas que vous êtes génial!"
+  end
   # config.respond_to_phrase "good night" do |responses|
   # responses << "Sweet dreams! I hope your day was great and tomorrow is better!" << "Thanks for the good night wishes! Enjoy your rest and have a great day tomorrow!"
   # end
+
+
 
   config.twitter_auth = TwitterAuth::AuthKeys
 end
