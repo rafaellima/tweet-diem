@@ -53,7 +53,7 @@ GEM
     rubyzip (1.0.0)
     simple_oauth (0.2.0)
     thor (0.18.1)
-    tweetbot (0.2.2)
+    tweetbot (0.3.0)
       tweetstream
       twitter
     tweetstream (2.5.0)
@@ -75,4 +75,4 @@ DEPENDENCIES
   foreman
   heroku
   rspec
-  tweetbot (~> 0.2.2)
+  tweetbot (~> 0.3.0)
